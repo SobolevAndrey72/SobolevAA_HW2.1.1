@@ -19,8 +19,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRS-hj-IzK">
                                 <rect key="frame" x="49" y="66" width="312" height="356"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZ2-Hi-m2z">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZ2-Hi-m2z" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="51" y="474" width="312" height="356"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
