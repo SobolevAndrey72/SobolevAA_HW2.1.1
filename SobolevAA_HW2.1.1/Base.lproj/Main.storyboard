@@ -15,8 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="c0q-Ua-icg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRS-hj-IzK">
+                                <rect key="frame" x="49" y="66" width="312" height="356"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZ2-Hi-m2z">
+                                <rect key="frame" x="51" y="474" width="312" height="356"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4Hu-Le-NrL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qRS-hj-IzK" firstAttribute="height" secondItem="HZ2-Hi-m2z" secondAttribute="height" id="1es-KK-rBh"/>
+                            <constraint firstItem="4Hu-Le-NrL" firstAttribute="bottom" secondItem="HZ2-Hi-m2z" secondAttribute="bottom" constant="32" id="4F0-2f-ytp"/>
+                            <constraint firstItem="4Hu-Le-NrL" firstAttribute="trailing" secondItem="qRS-hj-IzK" secondAttribute="trailing" constant="53" id="F6Z-bd-L92"/>
+                            <constraint firstItem="qRS-hj-IzK" firstAttribute="leading" secondItem="4Hu-Le-NrL" secondAttribute="leading" constant="49" id="W0O-w7-npd"/>
+                            <constraint firstItem="HZ2-Hi-m2z" firstAttribute="top" secondItem="qRS-hj-IzK" secondAttribute="bottom" constant="52" id="ckx-ZS-Ofy"/>
+                            <constraint firstItem="HZ2-Hi-m2z" firstAttribute="centerX" secondItem="c0q-Ua-icg" secondAttribute="centerX" id="gGA-fZ-cqh"/>
+                            <constraint firstItem="qRS-hj-IzK" firstAttribute="width" secondItem="HZ2-Hi-m2z" secondAttribute="width" id="joX-iR-eka"/>
+                            <constraint firstItem="qRS-hj-IzK" firstAttribute="top" secondItem="4Hu-Le-NrL" secondAttribute="top" constant="22" id="q97-4I-OHo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -27,6 +47,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
